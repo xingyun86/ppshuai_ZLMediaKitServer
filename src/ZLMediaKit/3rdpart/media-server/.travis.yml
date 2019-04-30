@@ -1,0 +1,8 @@
+language: c
+install: true
+before_script:
+ - wget https://github.com/ireader/sdk/archive/master.zip -O /tmp/sdk.zip
+ - unzip /tmp/sdk.zip
+ - echo $PWD
+ - mv sdk-master ../sdk
+script: make
